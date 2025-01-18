@@ -32,7 +32,8 @@ Before installation, the WT32C3-01N module must be flashed with a compatible fir
 2. Soldering
 Locate the original circuit board (SM-028_V1.3) in the socket.
 Remove the original board and solder the WT32C3-01N in place. Ensure proper alignment with the equivalent pin order for seamless integration.
-3. Configuring Tasmota
+Required pins: RX, TX, GND, 3V3, IO9 (to GND on boot)
+4. Configuring Tasmota
 After installing the new board, configure the socket with the following Tasmota template:
 ```
 {"NAME":"WT32C3-01N BLE Relay","GPIO":[0,544,0,2656,224,2624,320,0,0,0,2720,1,1,1,0,0,0,0,1,1,1,32],"FLAG":0,"BASE":1}
